@@ -1,3 +1,6 @@
+: #e7d7ea; }
+#proyectos { background: #fdf8fb; }
+#contacto { background: #781a5a; }
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -76,7 +79,7 @@ section {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  color: white;
+  color: #e7d7ea;
   margin: 0 auto; /* centra horizontalmente */
 }
 
@@ -88,6 +91,30 @@ section {
   background-repeat: no-repeat;  /* no se repita */
   width: 100%;                   /* ocupa todo el ancho disponible */
   height: 100vh;
+}
+
+@media (max-width: 768px) {
+  #inicio {
+    background-image: url('fondoiniciocelu.png'); /* más vertical */
+
+  }
+}
+/* Secciones en celulares */
+@media (max-width: 768px) {
+  #inicio {
+    height: 60vh;   /* Más chicas, 70% de la pantalla */
+    padding: 30px 0px; /* Menos espacio interno */
+    overflow-x: hidden; /* evita desplazamiento lateral */
+ 
+  }
+}
+@media (max-width: 768px) {
+  #sobre-mi {
+    height: 50vh;   /* Más chicas, 70% de la pantalla */
+    padding: 30px 0px; /* Menos espacio interno */
+    overflow-x: hidden; /* evita desplazamiento lateral */
+ 
+  }
 }
 
 .carousel {
@@ -133,6 +160,14 @@ button.next { right: 10px; }
 
 
 }
-#habilidades{ background: #e7d7ea; }
-#proyectos { background: #fdf8fb; }
+#habilidades{ background: #df7bf0; }
+#proyectos { background: #d6afc6; }
 #contacto { background: #781a5a; }
+@media (max-width: 768px) {
+  .section {
+    background-position: top center; /* centrado más hacia arriba */
+    /* opcional: cambiar la imagen a una más vertical */
+    background-image: url('fondoinicio.jpg');
+  }
+}
+

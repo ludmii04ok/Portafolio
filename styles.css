@@ -99,7 +99,7 @@ section {
 /* Secciones en celulares */
 @media (max-width: 768px) {
   #inicio {
-    height: 60vh;   /* Más chicas, 70% de la pantalla */
+    height: 80vh;   /* Más chicas, 70% de la pantalla */
     padding: 30px 0px; /* Menos espacio interno */
     overflow-x: hidden; /* evita desplazamiento lateral */
  
@@ -107,10 +107,10 @@ section {
 }
 @media (max-width: 768px) {
   #sobre-mi {
-    height: 50vh;   /* Más chicas, 70% de la pantalla */
+    height: 5vh !important ;   /* Más chicas, 70% de la pantalla */
     padding: 30px 0px; /* Menos espacio interno */
     overflow-x: hidden; /* evita desplazamiento lateral */
- 
+    min-height: 70vh;
   }
 }
 
@@ -167,4 +167,6 @@ button.next { right: 10px; }
     background-image: url('fondoinicio.jpg');
   }
 }
+
+
 
